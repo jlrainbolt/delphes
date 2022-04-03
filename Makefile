@@ -503,6 +503,7 @@ tmp/display/DisplayDict.$(SrcSuf): \
 	display/DelphesBranchElement.h \
 	display/Delphes3DGeometry.h \
 	display/DelphesEventDisplay.h \
+	display/UCDelphesEventDisplay.h \
 	display/DelphesHtmlSummary.h \
 	display/DelphesPlotSummary.h
 tmp/display/DisplayDict$(PcmSuf): \
@@ -1834,6 +1835,19 @@ tmp/display/DelphesEventDisplay.$(ObjSuf): \
 	classes/DelphesClasses.h \
 	external/ExRootAnalysis/ExRootConfReader.h \
 	external/ExRootAnalysis/ExRootTreeReader.h
+tmp/display/UCDelphesEventDisplay.$(ObjSuf): \
+	display/UCDelphesEventDisplay.$(SrcSuf) \
+	display/Delphes3DGeometry.h \
+	display/DelphesBranchElement.h \
+	display/DelphesCaloData.h \
+	display/DelphesDisplay.h \
+	display/DelphesEventDisplay.h \
+	display/UCDelphesEventDisplay.h \
+	display/DelphesHtmlSummary.h \
+	display/DelphesPlotSummary.h \
+	classes/DelphesClasses.h \
+	external/ExRootAnalysis/ExRootConfReader.h \
+	external/ExRootAnalysis/ExRootTreeReader.h
 tmp/display/DelphesHtmlSummary.$(ObjSuf): \
 	display/DelphesHtmlSummary.$(SrcSuf) \
 	display/DelphesHtmlSummary.h
@@ -1846,6 +1860,7 @@ DISPLAY_OBJ +=  \
 	tmp/display/DelphesCaloData.$(ObjSuf) \
 	tmp/display/DelphesDisplay.$(ObjSuf) \
 	tmp/display/DelphesEventDisplay.$(ObjSuf) \
+	tmp/display/UCDelphesEventDisplay.$(ObjSuf) \
 	tmp/display/DelphesHtmlSummary.$(ObjSuf) \
 	tmp/display/DelphesPlotSummary.$(ObjSuf)
 

@@ -1,4 +1,6 @@
 *~
+*.dat
+*.root
 *.swp
 *.swo
 *bk
@@ -9,6 +11,7 @@ DelphesLHEF
 DelphesROOT
 DelphesSTDHEP
 DelphesValidation
+DisplayDict_rdict.pcm
 ExRootAnalysisDict_rdict.pcm
 Example1
 FastJetDict_rdict.pcm
@@ -16,6 +19,7 @@ ModulesDict_rdict.pcm
 hepmc2pileup
 lhco2root
 libDelphes.so
+libDelphesDisplay.so
 libDelphesNoFastJet.so
 pileup2root
 root2lhco
