@@ -320,6 +320,7 @@ void DelphesEventDisplay::load_event()
 
   gEve->Redraw3D(kFALSE, kTRUE);
   fStatusBar_->SetText(Form("Loaded event %d.", event_id_), 1);
+  select_elements();
   gSystem->ProcessEvents();
 }
 

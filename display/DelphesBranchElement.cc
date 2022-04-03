@@ -284,7 +284,7 @@ void DelphesBranchElement<TEveTrackList>::ReadBranch()
     GenParticle *particle;
     while((particle = (GenParticle *)itTrack.Next()))
     {
-      if(particle->Status != 1) continue;
+//    if(particle->Status != 1) continue;
       TParticle pb(particle->PID, particle->Status, particle->M1, particle->M2, particle->D1, particle->D2,
         particle->P4().Px(), particle->P4().Py(),
         particle->P4().Pz(), particle->P4().E(),

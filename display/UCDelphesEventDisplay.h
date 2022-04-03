@@ -12,8 +12,10 @@ class UCDelphesEventDisplay: public DelphesEventDisplay
         UCDelphesEventDisplay(const char *configFile, const char *inputFile, Delphes3DGeometry &det3D);
         ~UCDelphesEventDisplay();
 
-//  private:
-//      void load_event() override;
+    private:
+        void select_elements() override;
+        void TurnOffBranches();
+        void FindBQuarks();
 };
 
 

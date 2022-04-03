@@ -54,7 +54,8 @@ public:
 protected:
   void update_html_summary();
   void make_gui();
-  virtual void load_event();
+  void load_event();
+  virtual void select_elements() {};
   void readConfig(const char *configFile, std::vector<DelphesBranchBase *> &elements);
 
   // Configuration and global variables.
