@@ -314,14 +314,18 @@ void DelphesEventDisplay::load_event()
   delphesDisplay_->ImportEventRPhi(top);
   delphesDisplay_->DestroyEventRhoZ();
   delphesDisplay_->ImportEventRhoZ(top);
-  update_html_summary();
   plotSummary_->FillEvent();
   plotSummary_->Draw();
 
   gEve->Redraw3D(kFALSE, kTRUE);
   fStatusBar_->SetText(Form("Loaded event %d.", event_id_), 1);
-  select_elements();
+  process_event();
   gSystem->ProcessEvents();
+}
+
+void DelphesEventDisplay::process_event()
+{
+  update_html_summary();
 }
 
 void DelphesEventDisplay::update_html_summary()
